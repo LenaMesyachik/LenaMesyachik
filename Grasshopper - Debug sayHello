@@ -1,0 +1,15 @@
+Grasshopper - Debug sayHello
+
+function sayHello(name) {
+    return "Hello, " +  name
+}
+
+sample tests
+describe("Tests", () => {
+  it("test", () => {
+Test.assertEquals(sayHello('Mr. Spock'), 'Hello, Mr. Spock')
+Test.assertEquals(sayHello('Captain Kirk'), 'Hello, Captain Kirk')
+Test.assertEquals(sayHello('Liutenant Uhura'), 'Hello, Liutenant Uhura')
+Test.assertEquals(sayHello('Dr. McCoy'), 'Hello, Dr. McCoy')
+  });
+});
