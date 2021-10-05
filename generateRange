@@ -1,0 +1,15 @@
+function generateRange(min, max, step){
+  const arr = [];
+  
+  for (let i = min; i <= max; i += step) {
+    arr.push(i);
+  }
+  
+  return arr;
+}
+
+sample tests
+
+describe("generateRange(2, 10, 2)", function() {
+  Test.assertSimilar(generateRange(2, 10, 2), [2,4,6,8,10]);
+});
