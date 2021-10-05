@@ -1,0 +1,18 @@
+function htmlspecialchars(formData) {
+   return formData
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;");  
+}
+
+Sample Tests:
+const chai = require("chai");
+const assert = chai.assert;
+chai.config.truncateThreshold=0;
+describe("Basic tests", () => {
+  it("Simple tests", () => {
+    assert.strictEqual(
+      htmlspecialchars("<h2>Hello World</h2>"),
+      "&lt;h2&gt;Hello World&lt;/h2&gt;"
+    );
