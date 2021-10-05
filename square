@@ -1,0 +1,16 @@
+function square(s) {
+return Math.pow(s, 2);
+  }
+  
+  
+  Sample Tests:
+describe("Tests", () => {
+  it("test", () => {
+Test.assertEquals(square(3), 9);
+});
+});
+describe("Tests", () => {
+  it("test", () => {
+Test.assertEquals(square(3), 9);
+});
+});
